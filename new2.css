@@ -1,0 +1,76 @@
+.content_table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content_table thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+.content_table th,
+.content_table td {
+  padding: 12px 15px;
+}
+.content_table tbody tr {
+  border-bottom: 1px solid#dddddd;
+}
+.content_table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.content_table tbody tr:last-of-type {
+  border-bottom: 2px solid#009879;
+}
+.content_table tbody tr.active_row {
+  font-weight: bold;
+  color: #009879;
+}
+/* ggd */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: indigo;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+
+  top: 22px;
+  left: 25px;
+  z-index: 1;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+/* list style */
+.list {
+  background-color: rgb(83, 72, 72);
+  padding: 20px;
+  color: #f3f3f3;
+  width: 50%;
+}
+
+.list ul {
+  list-style-type: none;
+}
+.list li {
+  font-size: 1.2rem;
+  color: white;
+}
+.list li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
